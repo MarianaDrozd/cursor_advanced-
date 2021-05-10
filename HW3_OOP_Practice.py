@@ -157,11 +157,9 @@ class Realtor(metaclass=RealtorMeta):
         else:
             print("There is no houses on sale!")
 
-    # @staticmethod
     def give_a_discount(self, house):
         house.apply_a_purchase_discount(self.discount)
 
-    # @staticmethod
     def steal_money(self):
         i = random.randrange(1, 10)
         if i == 1:
@@ -170,7 +168,6 @@ class Realtor(metaclass=RealtorMeta):
 
     def sold_house(self, house):
         self.houses.remove(house)
-
 
 
 house1 = House("158 Shevchenko str", 200, 37000)
@@ -195,5 +192,3 @@ lesya.info()
 petro = Person("Petro", 28, 10000, [])
 petro.buy_a_house(house4, realtorr)
 petro.info()
-
-
