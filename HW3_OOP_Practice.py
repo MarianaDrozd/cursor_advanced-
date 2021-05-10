@@ -153,7 +153,6 @@ class Realtor(metaclass=RealtorMeta):
                   f"{self.name}: There are such houses:")
             for house in self.houses:
                 print(f"- {house.address} with {house.area} sq.m. which costs ${house.cost}")
-            # self.houses = iter(self.houses)
 
         else:
             print("There is no houses on sale!")
