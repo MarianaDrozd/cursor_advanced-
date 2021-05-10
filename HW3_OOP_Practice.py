@@ -73,7 +73,8 @@ class Person(Human):
             return
         if house in realtor.houses:
             if self.money >= house.cost:
-                print(f"{self.name}: I buy the house {house.address} with area {house.area} sq.m. which costs ${house.cost}.")
+                print(f"{self.name}: I buy the house {house.address} with area {house.area} sq.m. which costs"
+                      f" ${house.cost}.")
                 self.money -= house.cost
                 print(f"{self.name}: Now I have ${self.money}.")
                 self.home.append(house.address)
