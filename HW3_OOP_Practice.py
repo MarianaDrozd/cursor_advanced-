@@ -68,7 +68,7 @@ class Person(Human):
 
     def buy_a_house(self, house, realtor):
         if realtor.steal_money is True:
-            self.money = 0
+            self.money -= house.cost
             print("Shit! The realtor stole my money!")
             return
         if house in realtor.houses:
