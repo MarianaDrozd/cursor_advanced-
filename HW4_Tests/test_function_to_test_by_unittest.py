@@ -42,6 +42,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(Calculator.divide(9, 3), 3)
         self.assertEqual(Calculator.divide(-35, -5), 7)
         self.assertEqual(Calculator.divide(9, -3), -3)
+        self.assertEqual(Calculator.divide(5.5, 5), 1.1)
+        self.assertNotEqual(Calculator.divide(4, 2), 8)
         with self.assertRaises(ValueError):
             Calculator.divide(2, 0)
             Calculator.divide(-3, 0)
@@ -50,6 +52,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(TypeError):
             Calculator.divide("54", "k")
             Calculator.divide("4", 5)
+            Calculator.divide(4, "5")
             Calculator.divide("2", 0)
 
 
