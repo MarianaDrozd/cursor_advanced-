@@ -19,7 +19,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(Calculator.subtract(6, 2), 4)
         self.assertEqual(Calculator.subtract(0, 0), 0)
         self.assertEqual(Calculator.subtract(-3, -4), 1)
-
         self.assertEqual(Calculator.subtract(6.25, 3.05), 3.20)
         self.assertEqual(Calculator.subtract(6, 5.5), 0.5)
         self.assertNotEqual(Calculator.subtract(5, -5), 1)
