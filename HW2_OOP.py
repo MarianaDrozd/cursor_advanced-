@@ -67,22 +67,22 @@ class Fish(Animal):
         print(f"{self.name} swims")
 
 
-salem, vincent, chickie, nagini, aqua = Cat("Salem"), Dog("Vincent"), Parrot("Chickie"), Snake("Nagini"), Fish("Aqua")
+if __name__ == "__main__":
+    salem, vincent, chickie, nagini, aqua = Cat("Salem"), Dog("Vincent"), Parrot("Chickie"), Snake("Nagini"), Fish("Aqua")
+    salem.meow()
+    salem.purr()
+    vincent.bark()
+    vincent.run()
+    chickie.sing()
+    chickie.fly()
+    nagini.crawl()
+    aqua.swim()
 
-salem.meow()
-salem.purr()
-vincent.bark()
-vincent.run()
-chickie.sing()
-chickie.fly()
-nagini.crawl()
-aqua.swim()
-
-animals = [salem, vincent, chickie, nagini, aqua]
-for animal in animals:
-    animal.eat()
-    animal.sleep()
-    print(f"{animal} is an instance of Animal class:", isinstance(animal, Animal))
+    animals = [salem, vincent, chickie, nagini, aqua]
+    for animal in animals:
+        animal.eat()
+        animal.sleep()
+        print(f"{animal} is an instance of Animal class:", isinstance(animal, Animal))
 
 # Output:
 # Salem: Meow!
@@ -137,10 +137,11 @@ class Centaur(Human, Animal):
         print(f"{self.__class__.__name__} fights")
 
 
-firenze = Centaur("Firenze")
-firenze.eat()
-firenze.sleep()
-firenze.fight()
+if __name__ == "__main__":
+    firenze = Centaur("Firenze")
+    firenze.eat()
+    firenze.sleep()
+    firenze.fight()
 
 # Output:
 # Centaur is eating
@@ -169,9 +170,10 @@ class Arm:
         self.message = message
 
 
-person = Person()
-for arm in person.arms:
-    print(arm.message)
+if __name__ == "__main__":
+    person = Person()
+    for arm in person.arms:
+        print(arm.message)
 
 # Output:
 # This is left arm
@@ -196,10 +198,11 @@ class Screen:
         self.screen_type = screen_type
 
 
-ips = Screen("IPS")
-xiaomi_redmi4a = CellPhone(ips)
-print(ips.screen_type)
-print(xiaomi_redmi4a.screen.screen_type)
+if __name__ == "__main__":
+    ips = Screen("IPS")
+    xiaomi_redmi4a = CellPhone(ips)
+    print(ips.screen_type)
+    print(xiaomi_redmi4a.screen.screen_type)
 
 # Output:
 # IPS
@@ -297,18 +300,19 @@ class HPLaptop(Laptop):
         print(f"The dynamics of {self.model} laptop are {self.dynamics_device}")
 
 
-laptop = HPLaptop("HP EliteBook 8760w Mobile Workstation",
-                  "HP DreamColor 17.3-inch diagonal LED-backlit (1600 x 900 resolution)",
-                  "HP DuraKeys", "Touchpad with on/off button, two-way scroll, gestures, three pick buttons",
-                  "Optional 720p HD", "RJ-11/modem, one RJ-45/Ethernet, USB 3.0, USB 2.0, eSATA/USB 2.0 combo",
-                  "SRS Premium Sound")
+if __name__ == "__main__":
+    laptop = HPLaptop("HP EliteBook 8760w Mobile Workstation",
+                      "HP DreamColor 17.3-inch diagonal LED-backlit (1600 x 900 resolution)",
+                      "HP DuraKeys", "Touchpad with on/off button, two-way scroll, gestures, three pick buttons",
+                      "Optional 720p HD", "RJ-11/modem, one RJ-45/Ethernet, USB 3.0, USB 2.0, eSATA/USB 2.0 combo",
+                      "SRS Premium Sound")
 
-laptop.screen()
-laptop.keyboard()
-laptop.touchpad()
-laptop.webcam()
-laptop.ports()
-laptop.dynamics()
+    laptop.screen()
+    laptop.keyboard()
+    laptop.touchpad()
+    laptop.webcam()
+    laptop.ports()
+    laptop.dynamics()
 
 # Output:
 # The screen of HP EliteBook 8760w Mobile Workstation laptop is HP DreamColor 17.3-inch diagonal
