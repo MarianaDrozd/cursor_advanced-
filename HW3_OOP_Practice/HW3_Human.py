@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 import random
+
+
 class Human(ABC):
     @abstractmethod
     def info(self):
