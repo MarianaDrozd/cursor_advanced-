@@ -1,6 +1,6 @@
-from HW3_Human import Person
-from HW3_Houses import House, SmallTypicalHouse
-from HW3_Realtor import Realtor
+from human import Person
+from houses import House, SmallTypicalHouse
+from realtor import Realtor
 import random
 
 if __name__ == "__main__":
